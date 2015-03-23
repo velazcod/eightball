@@ -1,1 +1,19 @@
-<h1>Hello, world</h1>
+<html>
+  <head>
+    <title>Eight Ball</title>
+    <script src="https://fb.me/react-0.13.1.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.1.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type="text/jsx" src="assets/javascripts/eightBallForm.jsx"></script>
+    <script type="text/jsx" src="assets/javascripts/eightBallAnswer.jsx"></script>
+    <script type="text/jsx" src="assets/javascripts/eightBall.jsx"></script>
+    <script type="text/jsx">
+      React.render(
+        <EightBall />,
+        document.getElementById('content')
+      );
+    </script>
+  </body>
+</html>
